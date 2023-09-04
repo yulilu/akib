@@ -4,10 +4,10 @@ import torch
 import transformers
 
 from flask import Flask, request, render_template, redirect, url_for
-app = Flask(__name__)
-app.logger.setLevel(logging.DEBUG)
 import logging
 from datetime import datetime
+app = Flask(__name__)
+app.logger.setLevel(logging.DEBUG)
 
 from transformers import AlbertTokenizer, AlbertForSequenceClassification
 
